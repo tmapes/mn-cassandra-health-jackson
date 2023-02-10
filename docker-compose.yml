@@ -1,0 +1,9 @@
+version: "3"
+services:
+  db:
+    image: cassandra:4.1.0
+    ports:
+      - "9042:9042"
+      - "7000:7000"
+    environment:
+      - CASSANDRA_SEEDS=db

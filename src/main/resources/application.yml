@@ -1,0 +1,14 @@
+micronaut:
+  application:
+    name: mnCassandraHealthJackson
+
+cassandra:
+  default: {}
+
+jackson:
+  serialization-inclusion: non_null
+
+endpoints:
+  health:
+    details-visible: anonymous
+    sensitive: false
