@@ -1,5 +1,7 @@
 # mn-cassandra-health-jackson
 
+### [git issue](https://github.com/micronaut-projects/micronaut-cassandra/issues/295)
+
 If your health endpoint is configured like the below, and your jackson serialization-inclusion configuration is set to include `NON_NULL` (or `ALWAYS`)  
 the health endpoint fails due to no serializer being available for the `Endpoint` used in the `nodeMap.put("endpoint", node.getEndPoint());` call
 
